@@ -12,7 +12,7 @@ WORKDIR /app
 #RUN apk -U upgrade \
 #    && apk add git && apk add yarn
 
-RUN git clone https://github.com/retromessa/rsm-calendar-api /app
+#RUN git clone https://github.com/retromessa/rsm-calendar-api /app
 RUN yarn
 
 COPY . /app
