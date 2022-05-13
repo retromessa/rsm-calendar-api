@@ -11,7 +11,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get upgrade -y && apt-get install yarn -y
 
-#RUN git clone https://github.com/retromessa/rsm-calendar-api /app
+RUN git clone https://github.com/retromessa/rsm-calendar-api /app
 RUN yarn
 
 COPY . /app
