@@ -9,8 +9,8 @@ MAINTAINER Zacharias R. Nilsen, zacker@zacker.no
 WORKDIR /app
 
 
-#RUN apk -U upgrade \
-#    && apk add git && apk add yarn
+RUN apk -U upgrade \
+    && apk add git && apk add yarn
 
 #RUN git clone https://github.com/retromessa/rsm-calendar-api /app
 RUN yarn
