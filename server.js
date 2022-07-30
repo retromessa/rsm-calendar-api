@@ -17,6 +17,7 @@ app.use(cors());
 // parse application/json
 app.use(bodyParser.json());
 
+app.use("/api/calendar", calendarRoutes);
 app.use("/calendar/api", calendarRoutes);
 app.use("/kiosk/api", kioskMenuRoutes);
 
